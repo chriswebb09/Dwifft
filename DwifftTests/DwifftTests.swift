@@ -141,7 +141,7 @@ class DwifftTests: XCTestCase {
             }
 
             @objc func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-                return self.diffCalculator.numberOfRows(inSection: section)
+                return self.diffCalculator.numberOfObjects(inSection: section)
             }
 
         }
@@ -226,7 +226,7 @@ class DwifftTests: XCTestCase {
             }
 
             @objc func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-                return diffCalculator.numberOfItems(inSection: section)
+                return diffCalculator.numberOfObjects(inSection: section)
             }
 
             @objc func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
